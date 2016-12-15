@@ -2,9 +2,8 @@
 /**
  * Renders the top navigation recursively.
  *
- * @link      https://github.com/tobiju/bookdown-bootswatch-templates for the canonical source repository
- * @copyright Copyright (c) 2015 Tobias Jüschke
- * @license   https://github.com/tobiju/bookdown-bootswatch-templates/blob/master/LICENSE.txt New BSD License
+ * @link      https://github.com/prooph/bookdown-template for the canonical source repository
+ * @license   https://github.com/prooph/bookdown-template/blob/master/LICENSE.txt New BSD License
  */
 
 /* @var \Bookdown\Bookdown\Content\Page $page */
@@ -25,6 +24,7 @@ $maxDepth = 3;
     <?php $class = ($depth == 1) ? 'nav navbar-nav' : 'dropdown-menu'; ?>
 
     <ul class="<?= $class ?>">
+        <img src="./prooph-logo.svg"/ class="prooph-logo"/>
         <?php foreach ($page->getChildren() as $child) : ?>
             <?= $this->render('partialTopNav', array(
                 'page' => $child,

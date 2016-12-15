@@ -1,10 +1,7 @@
 <?php
 /**
- * tobiju
- *
- * @link      https://github.com/tobiju/bookdown-bootswatch-templates for the canonical source repository
- * @copyright Copyright (c) 2015 Tobias Jüschke
- * @license   https://github.com/tobiju/bookdown-bootswatch-templates/blob/master/LICENSE.txt New BSD License
+ * @link      https://github.com/prooph/bookdown-template for the canonical source repository
+ * @license   https://github.com/prooph/bookdown-template/blob/master/LICENSE.txt New BSD License
  */
 
 $prev = $this->page->getPrev();
@@ -12,7 +9,7 @@ $parent = $this->page->getParent();
 $next = $this->page->getNext();
 
 if (!($copyright = $this->page->getCopyright())) {
-    $copyright = 'Powered by <a href="https://github.com/tobiju/bookdown-bootswatch-templates" title="Visit project to generate your own docs">Bookdown Bootswatch Templates</a>.';
+    $copyright = 'Powered by <a href="https://github.com/prooph/bookdown-template" title="Visit project to generate your own docs">Bookdown Bootswatch Templates</a>.';
 }
 ?>
         </div>

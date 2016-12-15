@@ -1,10 +1,7 @@
 <?php
 /**
- * tobiju
- *
- * @link      https://github.com/tobiju/bookdown-bootswatch-templates for the canonical source repository
- * @copyright Copyright (c) 2015 Tobias Jüschke
- * @license   https://github.com/tobiju/bookdown-bootswatch-templates/blob/master/LICENSE.txt New BSD License
+ * @link      https://github.com/prooph/bookdown-template for the canonical source repository
+ * @license   https://github.com/prooph/bookdown-template/blob/master/LICENSE.txt New BSD License
  */
 
 $cssPrism = getenv('CSS_PRISM') ?: 'ghcolors';
@@ -19,9 +16,9 @@ $cssBootswatch = getenv('CSS_BOOTSWATCH') ?: 'cerulean';
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/<?= $cssBootswatch; ?>/bootstrap.min.css">
     <link rel="stylesheet"
-          href="https://tobiju.github.io/share/prismjs/prism-<?= $cssPrism; ?>.css"/>
+          href="https://prooph.github.io/share/prismjs/prism-<?= $cssPrism; ?>.css"/>
     <link rel="stylesheet"
-          href="https://tobiju.github.io/share/prismjs/prism-linenumbers.css"/>
+          href="https://prooph.github.io/share/prismjs/prism-linenumbers.css"/>
     <style>
         body, html {
             height: 100%;
@@ -217,6 +214,22 @@ $cssBootswatch = getenv('CSS_BOOTSWATCH') ?: 'cerulean';
 
         footer #copyright span a {
             color: white;
+        }
+
+        .prooph-logo {
+            float: left;
+            margin-left: 8px;
+            margin-right: 8px;
+            transition-timing-function: ease-in-out;
+            transition: all 5s;
+            height: 50px;
+            padding: 5px;
+        }
+
+        .prooph-logo:hover {
+            transition: all .7s;
+            transition-timing-function: ease-out;
+            transform: rotate(360deg);
         }
 
         /* Top Navigation */
