@@ -16,9 +16,9 @@ $cssBootswatch = getenv('CSS_BOOTSWATCH') ?: 'cerulean';
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/<?= $cssBootswatch; ?>/bootstrap.min.css">
     <link rel="stylesheet"
-          href="https://prooph.github.io/share/prismjs/prism-<?= $cssPrism; ?>.css"/>
+          href="https://tobiju.github.io/share/prismjs/prism-<?= $cssPrism; ?>.css"/>
     <link rel="stylesheet"
-          href="https://prooph.github.io/share/prismjs/prism-linenumbers.css"/>
+          href="https://tobiju.github.io/share/prismjs/prism-linenumbers.css"/>
     <style>
         body, html {
             height: 100%;
