@@ -11,7 +11,7 @@ function renderTocList(array $elements, Aura\View\View $context)
     foreach ($elements as $entry) {
         $entryObj = new Bookdown\Bookdown\Content\Heading($entry['number'], $entry['title'], $entry['href'], $entry['id']);
 
-        echo '<li class="list-group-item">';
+        echo '<li class="list-group-item level-' . $entryObj->getLevel() . '">';
         echo '<div class="row clearfix">';
         echo '<div class="col-sm-2">' . '<span class="text-number">' . "{$entryObj->getNumber()}" . '</span></div>';
         echo '<div class="col-sm-10">' . $context->anchorRaw($entryObj->getHref(), $entryObj->getTitle()) . '</div>';
