@@ -17,7 +17,7 @@
   "homepage": "http://getprooph.org/",
   "license": "BSD-3-Clause",
   "require": {
-    "bookdown/bookdown": "^1.0.0"
+    "bookdown/bookdown": "1.x-dev"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
