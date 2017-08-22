@@ -9,7 +9,7 @@ $parent = $this->page->getParent();
 $next = $this->page->getNext();
 
 if (!($copyright = $this->page->getCopyright())) {
-    $copyright = 'Powered by <a href="https://github.com/prooph/bookdown-template" title="Visit project to generate your own docs">Bookdown Bootswatch Templates</a>.';
+    $copyright = 'Powered by <a href="https://github.com/prooph/bookdown-template" title="Visit project to generate your own docs">Prooph Bookdown Template</a>.';
 }
 ?>
         </div>
